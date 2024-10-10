@@ -55,6 +55,11 @@ class CalculatorTest {
     }
 
     @Test
+    void divisionExceptionTesting(){
+        assertThrows(ArithmeticException.class,()->Calculator.division(1,0));
+    }
+
+    @Test
     void advancedAdditionTest() {
     }
 
