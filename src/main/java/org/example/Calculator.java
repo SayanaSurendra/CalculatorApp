@@ -22,9 +22,16 @@ public class Calculator {
     }
 
 
-    public static int division(int num1, int num2) throws ArithmeticException {
+    public static int division(int num1, int num2)   {
         // System.out.println(num1 + "/" + num2 + "=" + (num1 / num2));
-        return num1 / num2;
+        int divisionResult=0;
+        try{
+            divisionResult= num1 / num2;
+
+        }catch (ArithmeticException e){
+            System.out.println(e.getMessage());
+        }
+       return divisionResult;
     }
 
     public static  int advancedAddition() {
